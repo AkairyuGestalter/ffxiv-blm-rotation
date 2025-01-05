@@ -91,9 +91,9 @@ export class SAMState extends GameState {
 		super.registerRecurringEvents([
 			{
 				reportName: localizeResourceType("HIGANBANA_DOT"),
-				groupedDots: [
+				groupedEffects: [
 					{
-						dotName: "HIGANBANA_DOT",
+						effectName: "HIGANBANA_DOT",
 						appliedBy: ["HIGANBANA"],
 					},
 				],
@@ -699,7 +699,7 @@ makeGCD_SAM("HIGANBANA", 30, {
 
 		state.addDoTPotencies({
 			node,
-			dotName: "HIGANBANA_DOT",
+			effectName: "HIGANBANA_DOT",
 			skillName: "HIGANBANA",
 			tickPotency,
 			speedStat: "sks",

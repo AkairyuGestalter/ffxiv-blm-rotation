@@ -85,8 +85,8 @@ function expandDoTNode(node: ActionNode, dotName: ResourceKey, lastNode?: Action
 		targetCount: node.targetCount,
 	};
 
-	entry.gap = node.getDotTimeGap(dotName);
-	entry.override = node.getDotOverrideAmount(dotName);
+	entry.gap = node.getOverTimeGap(dotName, "damage");
+	entry.override = node.getOverTimeOverrideAmount(dotName, "damage");
 	entry.baseMainPotency = mainPotency?.base ?? 0;
 	entry.calculationModifiers = mainPotency?.modifiers ?? [];
 	entry.mainPotencyHit = node.hitBoss(bossIsUntargetable);
