@@ -40,6 +40,12 @@ buffIcons.set(BuffType.ArcaneCircle, require("./Asset/Buffs/RPR/Arcane Circle.pn
 buffIcons.set(BuffType.RagingStrikes, require("./Asset/Buffs/BRD/Raging Strikes.png"));
 buffIcons.set(BuffType.Barrage, require("./Asset/Buffs/BRD/Barrage.png"));
 
+buffIcons.set(BuffType.Zoe, require("./Asset/Buffs/SGE/Zoe.png"));
+buffIcons.set(BuffType.Autophysis, require("./Asset/Buffs/SGE/Autophysis.png"));
+buffIcons.set(BuffType.Krasis, require("./Asset/Buffs/SGE/Krasis.png"));
+buffIcons.set(BuffType.Philosophia, require("./Asset/Buffs/SGE/Philosophia.png"));
+buffIcons.set(BuffType.Soteria, require("./Asset/Buffs/SGE/Soteria.png"));
+
 export const buffIconImages: Map<BuffType, HTMLImageElement> = new Map();
 buffIcons.forEach((path, skillName) => {
 	let imgObj = new Image();

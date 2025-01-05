@@ -60,6 +60,12 @@ export const enum PotencyModifierType {
 	SEARING_LIGHT,
 
 	PET,
+
+	ZOE,
+	SOTERIA,
+	KRASIS,
+	AUTOPHYSIS,
+	PHILOSOPHIA,
 }
 
 // Represents a multiplicative potency buff, e.g. AF3 multipliers potencies by 1.8
@@ -300,6 +306,31 @@ export const Modifiers = {
 		// with a 5% party bonus, smn pet skills do approximately 80% of its other potencies
 		// https://docs.google.com/spreadsheets/d/1Yt7Px7VHuKG1eJR9CRKs3RpvcR5IZKAAA3xjekvv0LY/edit?gid=0#gid=0
 		potencyFactor: 0.8,
+	} as PotencyMultiplier,
+	Zoe: {
+		kind: "multiplier",
+		source: PotencyModifierType.ZOE,
+		potencyFactor: 1.5,
+	} as PotencyMultiplier,
+	Soteria: {
+		kind: "multiplier",
+		source: PotencyModifierType.SOTERIA,
+		potencyFactor: 1.7,
+	} as PotencyMultiplier,
+	Krasis: {
+		kind: "multiplier",
+		source: PotencyModifierType.KRASIS,
+		potencyFactor: 1.2,
+	} as PotencyMultiplier,
+	Autophysis: {
+		kind: "multiplier",
+		source: PotencyModifierType.AUTOPHYSIS,
+		potencyFactor: 1.1,
+	} as PotencyMultiplier,
+	Philosophia: {
+		kind: "multiplier",
+		source: PotencyModifierType.PHILOSOPHIA,
+		potencyFactor: 1.2,
 	} as PotencyMultiplier,
 };
 

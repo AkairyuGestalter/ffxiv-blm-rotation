@@ -122,6 +122,11 @@ export type SMNResourceColors = {
 	searing: string;
 };
 
+export type SGEResourceColors = {
+	addersgall: string;
+	addersting: string;
+};
+
 export type JobAccentColors = Partial<{
 	[key in ShellJob]: string;
 }>;
@@ -161,6 +166,7 @@ export type ThemeColors = {
 	brd: BRDResourceColors;
 	gnb: GNBResourceColors;
 	smn: SMNResourceColors;
+	sge: SGEResourceColors;
 	timeline: {
 		ruler: string;
 		tracks: string;
@@ -171,6 +177,7 @@ export type ThemeColors = {
 		potCover: string;
 		buffCover: string;
 		damageMark: string;
+		healingMark: string;
 		untargetableDamageMark: string;
 		mpTickMark: string;
 		warningMark: string;
@@ -197,6 +204,7 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				BRD: "#91ba5e",
 				GNB: "#f6b26b",
 				SMN: "#2D9B78", // copied from fflogs
+				SGE: "#80a0f0",
 			},
 			realTime: "mediumseagreen",
 			historical: "#ff8c00", // darkorange
@@ -305,6 +313,10 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				emerald: "#539350",
 				searing: "#2D9B78",
 			},
+			sge: {
+				addersgall: "#80a0f0",
+				addersting: "#9e2dca",
+			},
 			timeline: {
 				ruler: "#2d2d2d",
 				tracks: "#242424",
@@ -315,6 +327,7 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				potCover: "#c4543a",
 				buffCover: "#9370db",
 				damageMark: "#ff0000",
+				healingMark: "#00ff00",
 				untargetableDamageMark: "#7f7f7f",
 				mpTickMark: "#32525e",
 				warningMark: "#9d7103",
@@ -338,6 +351,7 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				RPR: "#965a90",
 				BRD: "#91ba5e",
 				SMN: "#2D9B78", // copied from fflogs
+				SGE: "#80a0f0",
 			},
 			realTime: "mediumseagreen",
 			historical: "#ff8c00", // darkorange
@@ -446,6 +460,10 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				emerald: "#539350",
 				searing: "#2D9B78",
 			},
+			sge: {
+				addersgall: "#80a0f0",
+				addersting: "#9e2dca",
+			},
 			timeline: {
 				ruler: "#e9e9e9",
 				tracks: "#f3f3f3",
@@ -456,6 +474,7 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				potCover: "#ff865c",
 				buffCover: "#9370db",
 				damageMark: "#ff0000",
+				healingMark: "#00ff00",
 				untargetableDamageMark: "#7f7f7f",
 				mpTickMark: "#b6dfea",
 				warningMark: "#ffbb29",
