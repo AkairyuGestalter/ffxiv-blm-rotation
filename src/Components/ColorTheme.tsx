@@ -178,6 +178,7 @@ export type ThemeColors = {
 		buffCover: string;
 		damageMark: string;
 		healingMark: string;
+		aggroMark: string;
 		untargetableDamageMark: string;
 		mpTickMark: string;
 		warningMark: string;
@@ -328,6 +329,7 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				buffCover: "#9370db",
 				damageMark: "#ff0000",
 				healingMark: "#00ff00",
+				aggroMark: "#ff8000",
 				untargetableDamageMark: "#7f7f7f",
 				mpTickMark: "#32525e",
 				warningMark: "#9d7103",
@@ -475,6 +477,7 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 				buffCover: "#9370db",
 				damageMark: "#ff0000",
 				healingMark: "#00ff00",
+				aggroMark: "#ff8000",
 				untargetableDamageMark: "#7f7f7f",
 				mpTickMark: "#b6dfea",
 				warningMark: "#ffbb29",
