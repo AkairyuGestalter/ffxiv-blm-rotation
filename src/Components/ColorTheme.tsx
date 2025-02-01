@@ -125,6 +125,11 @@ export type SMNResourceColors = {
 export type SGEResourceColors = {
 	addersgall: string;
 	addersting: string;
+	zoe: string;
+	autophysis: string;
+	krasis: string;
+	soteria: string;
+	philosophia: string;
 };
 
 export type JobAccentColors = Partial<{
@@ -317,6 +322,11 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 			sge: {
 				addersgall: "#80a0f0",
 				addersting: "#9e2dca",
+				zoe: "cyan",
+				autophysis: "lightblue",
+				krasis: "teal",
+				soteria: "green",
+				philosophia: "lightgreen",
 			},
 			timeline: {
 				ruler: "#2d2d2d",
@@ -465,6 +475,11 @@ export let getCurrentThemeColors: () => ThemeColors = () => {
 			sge: {
 				addersgall: "#80a0f0",
 				addersting: "#9e2dca",
+				zoe: "cyan",
+				autophysis: "lightblue",
+				krasis: "teal",
+				soteria: "green",
+				philosophia: "lightgreen",
 			},
 			timeline: {
 				ruler: "#e9e9e9",
